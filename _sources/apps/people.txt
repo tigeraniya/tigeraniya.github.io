@@ -1,0 +1,10 @@
+People
+======
+
+Models
+------
+
+.. automodule:: people.models
+    :members:
+    :show-inheritance:
+

@@ -1,0 +1,27 @@
+.. _callfixie-index:
+
+################
+CallFixie Index
+################
+
+CallFixie is a platform to connect Service Providers ( Tradies ) to  Users.
+It tries to connect both via Mobile Apps, Web Apps, etc.
+
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   
+   project_plan.rst
+   business_requirements.rst
+   resources.rst
+   backend_application.rst
+   api.rst
+   svn.rst
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

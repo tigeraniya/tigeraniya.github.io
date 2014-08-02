@@ -1,0 +1,10 @@
+Models
+======
+.. automodule:: people.models
+    :members:
+    :show-inheritance:
+
+.. automodule:: core.models
+    :members:
+.. automodule:: tradies.models
+    :members:

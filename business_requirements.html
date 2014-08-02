@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2. Business Requirements &mdash; CallFixie 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.1.0/united/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="CallFixie 0.1 documentation" href="index.html" />
+    <link rel="next" title="3. Resources" href="resources.html" />
+    <link rel="prev" title="1. Project Plan" href="project_plan.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          CallFixie</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.2</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project_plan.html">1. Project Plan</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">2. Business Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">3. Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backend_application.html">4. Server Architecture and Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">5. API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="svn.html">6. SVN how to</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">2. Business Requirements</a><ul>
+<li><a class="reference internal" href="#login-signup">2.1. Login/Signup</a></li>
+<li><a class="reference internal" href="#notifications">2.2. Notifications</a><ul>
+<li><a class="reference internal" href="#user">2.2.1. User</a></li>
+<li><a class="reference internal" href="#tradie">2.2.2. Tradie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#job-posting">2.3. Job Posting</a></li>
+<li><a class="reference internal" href="#quotes">2.4. Quotes</a></li>
+<li><a class="reference internal" href="#profiles">2.5. Profiles</a><ul>
+<li><a class="reference internal" href="#id1">2.5.1. User</a></li>
+<li><a class="reference internal" href="#id2">2.5.2. Tradie</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#administration">2.6. Administration</a></li>
+<li><a class="reference internal" href="#payments">2.7. Payments</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="project_plan.html" title="Previous Chapter: 1. Project Plan"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm">&laquo; 1. Project Plan</span>
+    </a>
+  </li>
+  <li>
+    <a href="resources.html" title="Next Chapter: 3. Resources"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm">3. Resources &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/business_requirements.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="business-requirements">
+<h1>2. Business Requirements<a class="headerlink" href="#business-requirements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="login-signup">
+<h2>2.1. Login/Signup<a class="headerlink" href="#login-signup" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>User will be able to login to system using Callfixie specific cred (Rel 1.0) or Facebook/google/3rd Party Website creds (Rel 2.0).</li>
+<li>User will not be required to enter details until he raises a job/confirms it. (Rel 1.0)</li>
+</ol>
+</div>
+<div class="section" id="notifications">
+<h2>2.2. Notifications<a class="headerlink" href="#notifications" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="user">
+<h3>2.2.1. User<a class="headerlink" href="#user" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>New Quotes for posted Jobs. (Rel 1.0)</li>
+<li>Ques Ans responses. (Rel 1.0)</li>
+<li>Payment events. (Rel 1.0)</li>
+</ol>
+</div>
+<div class="section" id="tradie">
+<h3>2.2.2. Tradie<a class="headerlink" href="#tradie" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>New Jobs Suitable for given Profile and Location. (Rel 1.0)</li>
+<li>Ques Ans responses (Rel 2.0)</li>
+<li>payment events (Rel 1.0)</li>
+</ol>
+</div>
+</div>
+<div class="section" id="job-posting">
+<h2>2.3. Job Posting<a class="headerlink" href="#job-posting" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Location Information (Rel 1.0)</li>
+<li>Category [ plumber, gardener ] (Rel 1.0)</li>
+<li>Price Range (Rel 1.0)</li>
+<li>Time Range (Rel 2.0)</li>
+<li>Tradie Eligibility (Rel 2.0)</li>
+<li>Viewability , making a job private ( Rel 2.0 )</li>
+<li>User Account should provide credit card details before accepting a Job (Rel 1.0).</li>
+<li>Questions Answers on Job ( Rel 2.0)</li>
+<li>user should be able to cancel/update Job until it have received  a Quote . if a quote is received it will be obsoleted. if Job is approved its Critical information cannot be updated. Job can be cancelled at any point of time. Job cancelled after tradie have started working on it will go to dispute resolution department and refunds will be done by administration .(Rel 1.0)</li>
+<li>Quotes on a job can be seen by other tradies. ( Rel 1.0)</li>
+<li>user can see all quotes on Jobs. (Rel 1.0)</li>
+<li>Attachments ( images Rel 1.0 )( audio, Video Rel 2.0)</li>
+<li>Contract-Type ( Rel 1.0 )</li>
+</ol>
+</div>
+<div class="section" id="quotes">
+<h2>2.4. Quotes<a class="headerlink" href="#quotes" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Description (Rel 1.0)</li>
+<li>Attachments ( images Rel 1.0)( Audio,Video Rel 2.0)</li>
+<li>Tradie should be eligible by criterias set by Job Owner to quote. ( Rel 2.0 )</li>
+<li>Tradies can view jobs they are not eligible for. ( Rel 1.0 )</li>
+</ol>
+</div>
+<div class="section" id="profiles">
+<h2>2.5. Profiles<a class="headerlink" href="#profiles" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Can be deactivated by User. ( Rel 1.0 )</li>
+</ol>
+<div class="section" id="id1">
+<h3>2.5.1. User<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>profile will not be visible to public (Rel 1.0)</li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h3>2.5.2. Tradie<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>New Profiles need to be approved by Customer care ( Rel 1.0)</li>
+<li>Profile will be skill,Location specific ( Rel 1.0 )</li>
+<li>Reviews ( Rel 2.0)</li>
+<li>Past Jobs,Feedback ( Rel 2.0)</li>
+<li>Travel distance, areas Served ( Rel 2.0)</li>
+</ol>
+</div>
+</div>
+<div class="section" id="administration">
+<h2>2.6. Administration<a class="headerlink" href="#administration" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Approve a new tradie profile ( Rel 1.0 )</li>
+<li>Dispute resolution.(Rel 1.0)</li>
+<li>Complete logging of admin accounts. (Rel 1.0)</li>
+<li>edit of all fields except payments. (Rel 1.0)</li>
+<li>CustomerCare can create a job on behalf of user (Rel 2.0)</li>
+</ol>
+</div>
+<div class="section" id="payments">
+<h2>2.7. Payments<a class="headerlink" href="#payments" title="Permalink to this headline">¶</a></h2>
+<p>payments will be handled as</p>
+<ol class="arabic simple">
+<li>[ Callfixie %] upfront <a class="footnote-reference" href="#id4" id="id3">[1]</a> and rest of the amount between Tradie and User themselves. (Rel 1.0)</li>
+<li>Full amount upfront and refund in case of unsatisfactory work. (Rel 1.0).100 % deduction from user on job approval.</li>
+</ol>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[1]</a></td><td>for Hourly/continuous jobs this will be upfront amount decided by user.</td></tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Jaarwis Technology Group.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
