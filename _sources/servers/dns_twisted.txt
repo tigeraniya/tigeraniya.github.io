@@ -1,0 +1,22 @@
+Dynamic DNS server
+==================
+
+Sometimes we need a local dns server for making common intranet ip addresses avaiable from name, or create a dns server which can dynamically serve ip -> name mappings.
+
+In this tutorial we will try to create a dns server which will act as our dynamic dns server for our intranet.we will use fantastic twisted library with python to create our dns server. you can head over to https://twistedmatrix.com to know more about twisted framework. Programming in twisted is asyncronous in nature, But i will try to explain more on dns side without letting framework jargon to stop from enjoying dns server programming.
+
+This is the code to create a dumb dns server which returns same ip addresses for all queries
+
+.. literalinclude:: dns_twisted_one.py
+   :linenos:
+
+Installation :
+--------------
+required python 2.7,pip
+
+pip install twisted
+
+
+References :
+------------
+- a good link to start with is https://twistedmatrix.com/documents/14.0.0/names/howto/custom-server.html 

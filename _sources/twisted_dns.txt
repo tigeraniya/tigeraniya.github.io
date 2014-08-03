@@ -1,0 +1,4 @@
+DNS server with twisted
+=======================
+
+a good link to start with is https://twistedmatrix.com/documents/14.0.0/names/howto/custom-server.html 
